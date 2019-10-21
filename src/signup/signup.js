@@ -28,10 +28,10 @@ class Signup extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.main}>
+      <main className={classes.main}>
         <CssBaseline/>
         <Paper className={classes.paper}>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h4">
             Sign Up!
           </Typography>
           <form onSubmit={(e) => this.submitSignup(e)} className={classes.form}>
@@ -56,10 +56,10 @@ class Signup extends React.Component {
             </Typography> :
             null
           }
-          <h5 className={classes.hasAccountHeader}>Already Have An Account?</h5>
+          <h4 className={classes.hasAccountHeader}>Already Have An Account?</h4>
           <Link className={classes.logInLink} to='/login'>Log In!</Link>
         </Paper>
-      </div>
+      </main>
     );
   }
 

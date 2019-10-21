@@ -31,7 +31,7 @@ class Login extends React.Component {
       <main className={classes.main}>
         <CssBaseline/>
         <Paper className={classes.paper}>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h4">
             Log In!
           </Typography>
           <form onSubmit={(e) => this.submitLogin(e)} className={classes.form}>
@@ -51,7 +51,7 @@ class Login extends React.Component {
             </Typography> :
             null
           }
-          <h5 className={classes.noAccountHeader}>Don't Have An Account?</h5>
+          <h4 className={classes.noAccountHeader}>Don't Have An Account?</h4>
           <Link className={classes.signUpLink} to='/signup'>Sign Up!</Link>
         </Paper>
       </main>
